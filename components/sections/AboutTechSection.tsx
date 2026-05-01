@@ -89,7 +89,6 @@ export function AboutTechSection() {
               Estrutura · Precisão · Campo
             </p>
           </div>
-          <div className="absolute -bottom-6 -left-6 hidden h-24 w-24 rounded-xl border border-brand-orange/50 bg-brand-black/80 backdrop-blur md:block" />
         </div>
       </div>
     </section>
