@@ -13,7 +13,7 @@ const BRAND_ORANGE = "#FF5A1F";
 
 export default async function Image() {
   const logoSvg = await readFile(
-    join(process.cwd(), "public/logo.svg"),
+    join(process.cwd(), "public/logo_branca.svg"),
     "base64",
   );
   const logoSrc = `data:image/svg+xml;base64,${logoSvg}`;
