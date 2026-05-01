@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { getWhatsAppLink } from "@/lib/site";
+import { BrandLogo } from "./BrandLogo";
 import { Button } from "./Button";
 
 const links = [
@@ -21,13 +22,11 @@ export function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <Link
           href="#top"
-          className="group flex flex-col"
+          className="group flex shrink-0 items-center rounded-md outline-none ring-brand-orange/0 transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-brand-orange"
           onClick={() => setOpen(false)}
+          aria-label="Algayer — início"
         >
-          <span className="font-heading text-xl font-black tracking-tight text-brand-white md:text-2xl">
-            ALGAYER
-          </span>
-          <span className="h-0.5 w-0 bg-brand-orange transition-all group-hover:w-full" />
+          <BrandLogo priority />
         </Link>
 
         <nav

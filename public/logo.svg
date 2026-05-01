@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 172" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Algayer</title>
+  <desc id="desc">Logo Algayer para fundo escuro: ícone em A com vigas branca e laranja e palavra ALGAYER em branco.</desc>
+  <defs>
+    <style>
+      .wordmark {
+        font-family: Montserrat, "Arial Black", Arial, sans-serif;
+        font-weight: 900;
+        font-size: 118px;
+        letter-spacing: 0.04em;
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+  <!-- Ícone — vigas branca + laranja visíveis em fundo escuro -->
+  <g transform="translate(44 38)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36 126 L76 44" stroke="#ffffff" stroke-width="22" />
+    <path d="M164 126 L124 44" stroke="#FF5A1F" stroke-width="20" />
+    <path fill="#ffffff" d="M92 102h18l-9-15z" />
+  </g>
+  <text x="246" y="132" class="wordmark">ALGAYER</text>
+</svg>

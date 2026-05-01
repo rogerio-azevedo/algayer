@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getWhatsAppLink, siteConfig } from "@/lib/site";
+import { BrandLogo } from "./BrandLogo";
 
 const quickLinks = [
   { href: "#tecnologia", label: "Tecnologia" },
@@ -15,11 +16,14 @@ export function Footer() {
     <footer className="border-t border-brand-lead bg-brand-black py-16">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 md:flex-row md:justify-between">
         <div className="max-w-sm">
-          <p className="font-heading text-2xl font-black tracking-tight text-brand-white">
-            ALGAYER
-          </p>
-          <span className="mt-1 block h-1 w-14 bg-brand-orange" aria-hidden />
-          <p className="mt-4 text-sm leading-relaxed text-brand-gray-concrete">
+          <Link
+            href="#top"
+            className="inline-flex rounded-md outline-none ring-brand-orange/0 transition hover:opacity-90 focus-visible:ring-2 focus-visible:ring-brand-orange"
+            aria-label="Algayer — início"
+          >
+            <BrandLogo className="h-12 w-auto max-w-[min(100%,340px)] md:h-[3.25rem]" />
+          </Link>
+          <p className="mt-6 text-sm leading-relaxed text-brand-gray-concrete">
             {siteConfig.tagline}. Steel Frame com precisão industrial e entrega
             previsível.
           </p>
