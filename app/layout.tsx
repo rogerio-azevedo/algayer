@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
+import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -17,25 +18,32 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: "Algayer | Steel Frame — Construção inteligente",
+    default: siteConfig.ogTitle,
     template: "%s | Algayer",
   },
-  description:
-    "Construtora especializada em Steel Frame: mais rápido, seguro e eficiente. Projetos residenciais e comerciais com tecnologia industrializada.",
-  keywords: [
-    "steel frame",
-    "construção",
-    "Algayer",
-    "Light Steel Framing",
-    "obra rápida",
-  ],
+  description: siteConfig.ogDescription,
+  keywords: [...siteConfig.keywords],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Algayer | Steel Frame — Construção inteligente",
-    description:
-      "Steel Frame: prazo reduzido, precisão industrial e sustentabilidade. Solicite seu orçamento.",
+    title: siteConfig.ogTitle,
+    description: siteConfig.ogDescription,
+    url: siteConfig.siteUrl,
+    siteName: siteConfig.name,
     locale: "pt_BR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.ogTitle,
+    description: siteConfig.ogDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
