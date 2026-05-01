@@ -5,6 +5,7 @@ import { BrandLogo } from "./BrandLogo";
 const quickLinks = [
   { href: "#tecnologia", label: "Tecnologia" },
   { href: "#vantagens", label: "Vantagens" },
+  { href: "/catalogo", label: "Catálogo" },
   { href: "#portfolio", label: "Portfólio" },
   { href: "#contato", label: "Contato" },
 ];

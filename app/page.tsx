@@ -1,5 +1,6 @@
 import { AboutTechSection } from "@/components/sections/AboutTechSection";
 import { BenefitsSection } from "@/components/sections/BenefitsSection";
+import { CatalogSection } from "@/components/sections/CatalogSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-col flex-1">
         <HeroSection />
+        <CatalogSection />
         <AboutTechSection />
         <BenefitsSection />
         <NumbersSection />
